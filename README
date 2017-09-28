@@ -1,0 +1,38 @@
+WeatherBaloon is a command line application. The main class is named WeatherballoonApplication. 
+The program was developed by following the specs listed at https://gist.github.com/dbousamra/66cab2034e4f212553fb
+
+The application retrieves the lookup data from application.properties.
+
+It has 3 modes of operation:
+
+===========================
+1- Creation of smaple date
+===========================
+*Arguments: generate-data [--file=FILENAME] [--lines=NUMBER]
+*file defaults to balloondata.txt and lines defaults to the value stored in the properties file
+  
+*The inclusion of invalid data can be checked in NoisyObservationsFormatter.java
+
+================
+2- Statistics
+================
+*Arguments: generate-stats [--file=FILENAME]
+*file defaults to balloondata.txt
+
+========================
+3- Normalization of data
+========================
+*Arguments: normalize [--file=SOURCE_FILENAME] [--normalized=NORMALIZED_FILENAME] --temperature=[KELVIN|CELCIUS|FHARENHEIT] --distance=[KILOMETERS|METERS|MILES]
+*file defaults to normalized-balloondata.txt
+
+---------------------------------------------------------------------------------------
+
+*As we have three modes of operation, when more than one mode is passed as an argument, only the smallest mode of operation will be executed. 
+
+*Corrupted data will be discarded.
+
+#1 THING I DID NOT FINISH: I didn't code mode #3. The way I work can still be identified. 
+#1 HOW I WOULD DO IT: use the units conversors I have coded as ENUMS and write write the data to a file. 
+
+#2 THING I DID NOT FINISH: Sort unordered data 
+#1 HOW I WOULD DO IT: external merge sort
