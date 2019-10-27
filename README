@@ -1,5 +1,5 @@
 WeatherBaloon is a command line application. The main class is named WeatherballoonApplication. 
-The program was developed by following the specs listed at https://gist.github.com/dbousamra/66cab2034e4f212553fb
+The program was developed by following the specs in [this file](Interview.md)
 
 The application retrieves the lookup data from application.properties.
 
